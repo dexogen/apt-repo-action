@@ -70,7 +70,6 @@ else
         echo "Codename: ${codename}"
         echo "Components: ${components}"
         echo "Architectures: ${architectures}"
-        echo "Contents: ${CONTENTS:-main}"
         echo "SignWith: ${fingerprints[*]}"
     ) >>"${tmpdir}/.repo/${repo_name}/conf/distributions"
     if [[ -n "${override}" ]]; then
