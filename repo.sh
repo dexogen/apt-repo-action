@@ -70,8 +70,8 @@ else
         echo "Codename: ${codename}"
         echo "Components: ${components}"
         echo "Architectures: ${architectures}"
+        echo "Contents: ${CONTENTS:-main}"
         echo "SignWith: ${fingerprints[*]}"
-        echo "MaxVer: ${limit}"
     ) >>"${tmpdir}/.repo/${repo_name}/conf/distributions"
     if [[ -n "${override}" ]]; then
         echo "DebOverride: ${override##*/}" >>"${tmpdir}/.repo/${repo_name}/conf/distributions"
