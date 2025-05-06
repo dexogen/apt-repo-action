@@ -71,7 +71,7 @@ else
         echo "Components: ${components}"
         echo "Architectures: ${architectures}"
         echo "SignWith: ${fingerprints[*]}"
-        echo "Limit: ${limit}"
+        echo "MaxVer: ${limit}"
     ) >>"${tmpdir}/.repo/${repo_name}/conf/distributions"
     if [[ -n "${override}" ]]; then
         echo "DebOverride: ${override##*/}" >>"${tmpdir}/.repo/${repo_name}/conf/distributions"
